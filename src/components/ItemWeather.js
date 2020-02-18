@@ -26,11 +26,14 @@ const ItemWeather = (props) => {
             <div className='flex-container-left row'>
                 <img src={`http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`} alt={weather[0].description}/>
                 {main.temp}
+                {main.temp}
+                {main.temp}
                 <WiCelsius size={34}/>
                 <WindIcon speed={wind.speed}/>
                 <WindDirection deg={wind.deg}/>
             </div>
         </div>
+
     )
 };
 
