@@ -23,7 +23,6 @@ const ItemWeather = (props) => {
                 <WindIcon speed={wind.speed}/>
                 <WindDirection deg={wind.deg}/>
             </div>
-
         </div>
     )
 };
