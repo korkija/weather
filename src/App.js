@@ -21,7 +21,7 @@ function App() {
                         </div>
                     </Content>
                 </Router>
-                <Footer>Ant Design ©2018 Created by Ant UED</Footer>
+                <Footer>Hello world ©2020 Created by hand</Footer>
             </Layout>
         </Provider>
     );

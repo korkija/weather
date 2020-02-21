@@ -1,5 +1,8 @@
 import axios from "axios";
-
+import {
+    URL_WEATHER,
+    URL_WEATHER_FIVE_DAYS,
+} from "../configUrl";
 import {
     GET_WEATHER_PENDING,
     GET_WEATHER_REJECTED,
@@ -7,9 +10,8 @@ import {
     GET_WEATHER_FIVE_DAYS_PENDING,
     GET_WEATHER_FIVE_DAYS_RESOLVED,
     GET_WEATHER_FIVE_DAYS_REJECTED,
-    URL_WEATHER,
-    URL_WEATHER_FIVE_DAYS,
 } from "../constants";
+
 
 const getWeatherForOneDayPending = () => ({
     type: GET_WEATHER_PENDING
