@@ -19,24 +19,29 @@ class FiveDays extends React.Component {
             month: 'long',
             day: 'numeric',
         };
+        console.log( 'this.props.weatherForSeveralDays[0].weather');
+        console.log( this.props.weatherForSeveralDays[0]);
         return (
             isLoadingFiveDays
                 ? <div>Loading</div>
                 :
-                <div>
-                    <button className={"button-choose"} onClick={history.goBack}>Back</button>
-                    <div className='scroll'>
-                        {this.props.weatherForSeveralDays.map((item, index, array) => (
-                            <div key={item.dt}>
-                                {((index === 0) ||
-                                    (new Date(array[index - 1].dt * 1000).toLocaleString('ru', typeDateDate) !==
-                                        (new Date(item.dt * 1000).toLocaleString('ru', typeDateDate)))) &&
-                                <div>{new Date(item.dt * 1000).toLocaleString('ru', typeDateDate)}</div>}
-                                <ItemWeather key={item.dt} props={item}/>
-                            </div>
-                        ))}
+                this.props.weatherForSeveralDays[0]
+                    ?
+                    <div>
+                        <button className={"button-choose"} onClick={history.goBack}>Back</button>
+                        <div className='scroll'>
+                            {this.props.weatherForSeveralDays.map((item, index, array) => (
+                                <div key={item.dt}>
+                                    {((index === 0) ||
+                                        (new Date(array[index - 1].dt * 1000).toLocaleString('ru', typeDateDate) !==
+                                            (new Date(item.dt * 1000).toLocaleString('ru', typeDateDate)))) &&
+                                    <div>{new Date(item.dt * 1000).toLocaleString('ru', typeDateDate)}</div>}
+                                    <ItemWeather key={item.dt} props={item}/>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                    : <div>Doesn't have information</div>
         )
     };
 }

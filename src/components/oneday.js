@@ -23,11 +23,14 @@ class OneDay extends React.Component {
             isLoading
                 ? <div>Loading</div>
                 :
-                <div>
-                    <div>{new Date(this.props.weatherForDay.dt * 1000).toLocaleString('ru', typeDateDate)}</div>
-                    <ItemWeather props={this.props.weatherForDay}/>
-                    <button className={"button-choose"} onClick={history.goBack}>Back</button>
-                </div>
+                this.props.weatherForDay.weather
+                    ?
+                    <div>
+                        <div>{new Date(this.props.weatherForDay.dt * 1000).toLocaleString('ru', typeDateDate)}</div>
+                        <ItemWeather props={this.props.weatherForDay}/>
+                        <button className={"button-choose"} onClick={history.goBack}>Back</button>
+                    </div>
+                    : <div>Doesn't have information</div>
         )
     };
 }
