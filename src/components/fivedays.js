@@ -19,8 +19,6 @@ class FiveDays extends React.Component {
             month: 'long',
             day: 'numeric',
         };
-        console.log( 'this.props.weatherForSeveralDays[0].weather');
-        console.log( this.props.weatherForSeveralDays[0]);
         return (
             isLoadingFiveDays
                 ? <div>Loading</div>
