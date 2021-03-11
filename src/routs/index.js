@@ -13,6 +13,7 @@ import ChooseOneOrFive from "../components/chooseOneOrFive";
                 {/*<Route path="/oneday" component={OneDayContainer}/>*/}
                 {/*<Route path="/fivedays" component={FiveDaysContainer}/>*/}
                 <Route path="/fivedays" component={FiveDaysContainer}/>
+                {/*<Route path="/fivedays" component={FiveDaysContainer}/>*/}
             </Switch>
         </div>
 

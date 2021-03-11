@@ -28,6 +28,12 @@ function App() {
                 <Footer>4 Hello 55r5 ©2021© Created by hand</Footer>
                 <Footer>5 Hello world ©20r20© Created by hand</Footer>
                 <Footer>6 Hellro world ©2021© Createrd by hand</Footer>
+                <Footer>1 He1llo world ©2018© Created by hand</Footer>
+                <Footer>2 Hello world ©20019© Created by hand</Footer>
+                <Footer>3 Hello world ©2020© 7777 by hand</Footer>
+                <Footer>4 Hello 555 ©2021© Created by hand</Footer>
+                <Footer>5 Hel1lo world ©2020© Created by hand</Footer>
+                <Footer>6 Hello world ©20211© Created by hand</Footer>
             </Layout>
         </Provider>
     );
