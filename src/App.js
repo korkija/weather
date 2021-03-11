@@ -22,10 +22,6 @@ function App() {
                     </Content>
                 </Router>
                 <Footer>Hello world ©2021© Created by hand</Footer>
-                <Footer>Hello world ©2021© Created by hand</Footer>
-                <Footer>world ©2021© Created by hand</Footer>
-                <Footer>Hello ©2021© Created by hand</Footer>
-                <Footer>Hello ©2021© by hand</Footer>
             </Layout>
         </Provider>
     );
