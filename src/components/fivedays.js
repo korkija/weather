@@ -39,7 +39,8 @@ class FiveDays extends React.Component {
                             ))}
                         </div>
                     </div>
-                    : <div>Doesn't have information</div>
+                    : <div>Doesn't have information!</div>
+                    // : <div>Doesn't have information!</div>
         )
     };
 }
