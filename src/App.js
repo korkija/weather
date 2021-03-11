@@ -22,6 +22,7 @@ function App() {
                     </Content>
                 </Router>
                 <Footer>Hello world ©2021© Created by hand</Footer>
+                <Footer>Hello world ©2021© Created by hand</Footer>
             </Layout>
         </Provider>
     );
