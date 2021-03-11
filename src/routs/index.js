@@ -10,6 +10,8 @@ import ChooseOneOrFive from "../components/chooseOneOrFive";
             <Switch>
                 <Route path="/" exact component={ChooseOneOrFive}/>
                 <Route path="/oneday" component={OneDayContainer}/>
+                {/*<Route path="/oneday" component={OneDayContainer}/>*/}
+                {/*<Route path="/fivedays" component={FiveDaysContainer}/>*/}
                 <Route path="/fivedays" component={FiveDaysContainer}/>
             </Switch>
         </div>

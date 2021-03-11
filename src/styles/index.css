@@ -21,17 +21,17 @@
 }
 
 .button-choose {
-    background-color: #61dafb;
+    background-color: #55d8fc;
     width: 200px;
     border-radius: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-color: #61dafb;
+    border-color: #4dd5fa;
     margin: 10px;
 }
 
 .weather-day {
-    background-color: #f5c488;
+    background-color: #f3c081;
     width: 350px;
     border-radius: 15px;
     padding-top: 10px;
