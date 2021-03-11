@@ -14,6 +14,7 @@ function App() {
     return (
         <Provider store={store}>
             <Layout>
+                <Footer>Footer ©3022© by hand</Footer>
                 <Router history={history}>
                     <Content style={{padding: '0 50px', marginTop: 64}}>
                         <div style={{background: '#eee', padding: 24, minHeight: 380}}>
